@@ -10,7 +10,8 @@
   <!-- Partner Versions-->
   <PropertyGroup>
     <CodeAnalysisVersion>2.0.0</CodeAnalysisVersion>
-    <JsonNetVersion>10.0.1</JsonNetVersion>
+    <JsonNetVersion>
+    </JsonNetVersion>
     <!-- This needs to match the CLI's msbuild version.
       https://github.com/dotnet/cli/blob/master/build/DependencyVersions.props
       -->
