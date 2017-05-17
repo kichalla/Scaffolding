@@ -1,4 +1,8 @@
 <Project>
+    <!-- This needs to match the CLI's msbuild version.
+      https://github.com/dotnet/cli/blob/master/build/DependencyVersions.props
+      -->
+  <Import Project="MicrosoftBuildVersion.props" />
   <PropertyGroup>
     <InternalAspNetCoreSdkVersion>2.1.0-*</InternalAspNetCoreSdkVersion>
     <NETStandardImplicitPackageVersion>$(BundledNETStandardPackageVersion)</NETStandardImplicitPackageVersion>
@@ -10,13 +14,7 @@
   <!-- Partner Versions-->
   <PropertyGroup>
     <CodeAnalysisVersion>2.0.0</CodeAnalysisVersion>
-    <JsonNetVersion>
-    </JsonNetVersion>
-    <!-- This needs to match the CLI's msbuild version.
-      https://github.com/dotnet/cli/blob/master/build/DependencyVersions.props
-      -->
-    <MicrosoftBuildVersion>
-    </MicrosoftBuildVersion>
+    <JsonNetVersion>10.0.1</JsonNetVersion>
     <NuGetFrameworksVersion>4.0.0-*</NuGetFrameworksVersion>
     <CoreFxVersion>4.3.0</CoreFxVersion>
   </PropertyGroup>
